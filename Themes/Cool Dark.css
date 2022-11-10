@@ -43,7 +43,7 @@ meta.textfield {
 	border-color: hsl(210, 5%, 23%);
 }
 meta.textfield.highlighted {
-	background-color: hsl(210, 5%, 10%);
+	background-color: rgba(0, 0, 0, 0.302);
 	border-color: hsl(210, 5%, 23%);
 }
 
@@ -51,7 +51,7 @@ meta.textfield.highlighted {
  * Document styles
  */
 meta.document {
-	background-color: hsl(210, 31%, 10%);
+	background-color: hsl(210, 37%, 13%);
 	border-color: hsla(0, 0%, 100%, 0.1);
 }
 
@@ -83,6 +83,7 @@ meta.text.invisible {
 	color: hsla(210, 100%, 90%, 0.15);
 }
 meta.text.selected {
+	background-color: hsla(210, 100%, 50%, 0.15);
 }
 
 /* Cursor */
@@ -97,7 +98,7 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-	color: rgba(255, 255, 255, 0.318);
+	color: rgba(255, 255, 255, 0.334);
 }
 meta.gutter.selected {
 	background-color: rgba(0, 0, 0, 0.155);
@@ -135,7 +136,7 @@ keyword {
 	font-style: italic;
 	color: hsl(360, 85%, 65%);
 }
-/* keyword.modifier {
+keyword.modifier {
 	color: hsl(360, 85%, 65%);
 }
 keyword.condition {
@@ -152,7 +153,7 @@ keyword.self {
 }
 keyword.self.prefix {
 	color: hsl(210, 100%, 80%);
-} */
+}
 
 /* Values */
 value.boolean {
@@ -173,7 +174,7 @@ value.symbol {
 
 /* Identifiers */
 identifier.type {
-	/* color: hsl(32, 90%, 70%); */
+	color: hsl(32, 90%, 70%);
 }
 identifier.constant,
 identifier.global,
@@ -249,7 +250,6 @@ markup.bold {
 }
 markup.italic {
 	color: hsl(94, 44%, 64%);
-	font-style: italic;
 }
 markup.strikethrough {
 	color: hsl(210, 20%, 50%);
@@ -304,11 +304,9 @@ tag.attribute.value {
 /* Styles */
 style.at {
 	color: hsl(32, 90%, 70%);
-	font-style: italic;
 }
 
 style.selector {
-	font-style: italic;
 	font: thing;
 }
 style.selector.identifier.id {
